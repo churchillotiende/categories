@@ -164,11 +164,11 @@ const Navbar = () => {
   return (
     <div>
     <Nav>
-      <Link href={'/'}>
+      {/* <Link href={'/'}> */}
         <div className='logo'  style = {{cursor:'pointer'}}>
             Uchoice 
         </div>
-      </Link>
+      {/* </Link> */}
       <div>
       <ul className="navbar-nav mb-3">
         <li className="nav-item dropdown">
@@ -177,10 +177,18 @@ const Navbar = () => {
           </div>
           <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
             {/* <Link href = '/admin'><li><a className="dropdown-item" href="#">Admin</a></li></Link> */}
-             <Link href = '/register'><li><a className="dropdown-item" href="#">Sign Up</a></li></Link>
-            <Link href = '/signin'><li><a className="dropdown-item" href="#">Sign In</a></li></Link>
-            <Link href = '/profile'><li><a className="dropdown-item" href="#">Profile</a></li></Link>
-            <Link href = '/shop'><li><a className="dropdown-item" href="#">Shop</a></li></Link>
+            {/* <Link href = '/register'> */}
+              <li><a className="dropdown-item" href="#">Sign Up</a></li>
+            {/* </Link> */}
+            {/* <Link href = '/signin'> */}
+              <li><a className="dropdown-item" href="#">Sign In</a></li>
+              {/* </Link> */}
+            {/* <Link href = '/profile'> */}
+              <li><a className="dropdown-item" href="#">Profile</a></li>
+              {/* </Link> */}
+            {/* <Link href = '/shop'> */}
+              <li><a className="dropdown-item" href="#">Shop</a></li>
+            {/* </Link> */}
           </ul>
         </li>
       </ul>
@@ -191,18 +199,26 @@ const Navbar = () => {
         <div />
       </StyledBurger>
       <Ul open={open} onClick={() => setOpen(!open)}>
-      <Link href={'/'}><li>Home</li></Link>
-      <Link href={'/about_us'}><li>About Us</li></Link>
-      <Link href={'/contact'}><li>Contact Us</li></Link>
-      <Link href={'/admin'}><li>Admin</li></Link>
-      <Link href="/cart">
+      {/* <Link href={'/'}> */}
+        <li>Home</li>
+        {/* </Link> */}
+      {/* <Link href={'/about_us'}> */}
+        <li>About Us</li>
+        {/* </Link> */}
+      {/* <Link href={'/contact'}> */}
+        <li>Contact Us</li>
+        {/* </Link> */}
+      {/* <Link href={'/admin'}> */}
+        <li>Admin</li>
+        {/* </Link> */}
+      {/* <Link href="/cart"> */}
           <div className={styles.item}>
             <div className={styles.cart}>
               <Image src="/img/cart.png" alt="" width="20px" height="20px" />
               <div className={styles.counter}>{quantity}</div>
           </div>
          </div>
-        </Link>
+        {/* </Link> */}
     </Ul>
     </Nav>
     </div>
