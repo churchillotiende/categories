@@ -1,0 +1,44 @@
+{
+  "name": "uchoice",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "herokuPostBuild": "npm run build",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@emailjs/browser": "^3.7.0",
+    "@paypal/react-paypal-js": "^7.5.0",
+    "@popperjs/core": "^2.11.6",
+    "@reduxjs/toolkit": "^1.7.1",
+    "axios": "^0.24.0",
+    "bcrypt": "^5.1.0",
+    "bootstrap": "^5.2.2",
+    "cookie": "^0.4.1",
+    "firebase": "^8.0.0",
+    "jquery": "^3.6.1",
+    "js-cookie": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.4",
+    "next": "12.0.7",
+    "popper.js": "^1.16.1",
+    "react": "17.0.2",
+    "react-chat-engine": "^1.8.10",
+    "react-dom": "17.0.2",
+    "react-firebase-hooks": "^3.0.4",
+    "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.4.0",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "sass": "^1.55.0",
+    "styled-components": "^5.3.6",
+    "vercel": "^28.4.8"
+  },
+  "devDependencies": {
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7"
+  }
+}
