@@ -16,25 +16,26 @@ const Footer = () => {
         </div>
         <div className={styles.card}>
           <h1 className={styles.title}>Quick Links</h1>
-          <Link href = '/'><p className={styles.text}>
+          {/* <Link href = '/'> */}
+            <p className={styles.text}>
             Home
           </p>
-          </Link>
-           <Link href = '/about_us'>
+          {/* </Link> */}
+           {/* <Link href = '/about_us'> */}
           <p className={styles.text}>
             About
           </p>
-          </Link>
-          <Link href= '/contact'>
+          {/* </Link> */}
+          {/* <Link href= '/contact'> */}
           <p className={styles.text}>
           Contact
           </p>
-          </Link>
-          <Link href = '/signin'>
+          {/* </Link> */}
+          {/* <Link href = '/signin'> */}
           <p className={styles.text}>
             Login
           </p>
-          </Link>
+          {/* </Link> */}
         </div>
         <div className={styles.card}>
           <h3 className={styles.title}>Working Hours</h3>
