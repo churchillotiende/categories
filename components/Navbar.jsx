@@ -169,7 +169,13 @@ const Navbar = () => {
             Uchoice 
         </div>
       {/* </Link> */}
-      <div>
+      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+        <div />
+        <div />
+        <div />
+      </StyledBurger>
+      <Ul open={open} onClick={() => setOpen(!open)}>
+        <div>
       <ul className="navbar-nav mb-3">
         <li className="nav-item dropdown">
           <div className="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -192,13 +198,7 @@ const Navbar = () => {
           </ul>
         </li>
       </ul>
-    </div>
-      <StyledBurger open={open} onClick={() => setOpen(!open)}>
-        <div />
-        <div />
-        <div />
-      </StyledBurger>
-      <Ul open={open} onClick={() => setOpen(!open)}>
+      </div>
       {/* <Link href={'/'}> */}
         <li>Home</li>
         {/* </Link> */}
