@@ -3,7 +3,7 @@ import axios from "axios"
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
 
 export const getData = async (url) => {
-    const res = await axios.get(`${baseUrl}/api/${url}`, {
+    const res = await fetch(`${baseUrl}/api/${url}`, {
         method: 'GET',
         // headers: {
         //     'Authorization': token
