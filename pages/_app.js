@@ -20,13 +20,15 @@ function MyApp({ Component, pageProps }) {
   </Head>
 
   return (
-    <DataProvider>
+    
       <Provider store={store}>
-        <Layout>
-            <Component {...pageProps} />
-        </Layout>
+        <DataProvider>
+          <Layout>
+              <Component {...pageProps} />
+          </Layout>
+        </DataProvider>
       </Provider>
-    </DataProvider>
+    
     
   );
 }
