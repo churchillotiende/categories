@@ -46,7 +46,7 @@ const dbConnect = () => {
         console.log('Already connected.')
         return;
     }
-    mongoose.connect(process.env.MONGODB_URI, {
+    mongoose.connect(process.env.NEXT_PUBLIC_BASE_MONGODB_URI, {
         // useCreateIndex: true,
         // useFindAndModify: false,
         useNewUrlParser: true,
